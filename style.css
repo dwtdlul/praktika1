@@ -53,6 +53,7 @@ nav {
   display: flex;
   gap: 20px;
 }
+
 nav a {
 font-family: var(--font-family);
 font-weight: 400;
@@ -99,6 +100,7 @@ width: 209px;
 height: 38px;
 
 }
+
 /* Hero - используем Carousel.png как фон */
 .hero {
   height: 550px;
@@ -126,6 +128,7 @@ h1 {
   font-size: 14px;
   color: #fff;
 }
+
 /* Кнопки */
 .btn {
   padding: 12px 30px;
@@ -328,6 +331,7 @@ padding-bottom: 44px;
 .specs-buttons {
   margin-top: 30px;
 }
+
 /* Футер */
 .footer {
   background: #373a3c;
