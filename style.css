@@ -207,3 +207,124 @@ body {
   text-align: center;
   margin-bottom: 60px;
 }
+
+.game-title-section h2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  color: #435766;
+margin-top: 100px;
+  margin-bottom: 210px;
+}
+
+/* Видео - используем Video.png */
+.video-section {
+  margin-bottom: 80px;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-thumb {
+  width: 100%;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Особенности - используем iw-key-art.png и ranked-callofduty-lead.png */
+.features {
+  margin-bottom: 80px;
+}
+
+.feature-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.feature-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-text,
+.feature-image {
+  flex: 1;
+}
+
+.feature-text h3 {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+color: #435766;
+padding-right: 126px;
+padding-bottom: 250px;
+}
+
+.feature-image img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+/* Спецификации */
+.specs {
+  text-align: center;
+}
+
+.specs h2 {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+color: #435766;
+padding-bottom: 44px;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.spec-item {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 21px;
+line-height: 114%;
+color: #435766;
+}
+.spec h2{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+color: #435766;
+padding-bottom: 44px;
+}
+
+.specs-buttons {
+  margin-top: 30px;
+}
