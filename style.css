@@ -23,6 +23,30 @@ header {
   flex-wrap: wrap;
   gap: 250px;
 }
+
+/* Скрываем чекбокс */
+.menu-toggle {
+  display: none;
+}
+
+/* Гамбургер-иконка (скрыта на десктопе) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  padding: 5px;
+  z-index: 101;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  display: block;
+}
+
 header .right{
   display: flex;
   text-align: center;
@@ -382,7 +406,86 @@ padding-bottom: 44px;
   font-size: 0.9rem;
 }
 
-/* Адаптивность */
+/* ===== МОБИЛЬНАЯ АДАПТАЦИЯ HEADER ===== */
+@media (max-width: 768px) {
+  header {
+    gap: 0;
+    padding: 12px 20px;
+    flex-wrap: nowrap;
+  }
+
+  /* Показываем гамбургер на мобильных */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Анимация гамбургера в крестик при открытом меню */
+  .menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  /* Мобильное меню - скрыто по умолчанию */
+  header .right {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #2b2b2b;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+    z-index: 99;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* Показываем меню при checked */
+  .menu-toggle:checked ~ .right {
+    transform: translateY(0);
+  }
+
+  /* Вертикальная навигация */
+  nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+    width: 100%;
+  }
+
+  /* Поиск на всю ширину */
+  .search-bar {
+    width: 100%;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  /* My Xbox тоже на всю ширину */
+  .my-xbox {
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 10px;
+  }
+}
+
+/* Остальные медиа-запросы */
 @media (max-width: 768px) {
   .feature-row,
   .feature-row.reverse {
@@ -391,10 +494,6 @@ padding-bottom: 44px;
 
   .specs-grid {
     grid-template-columns: 1fr;
-  }
-
-  .nav-links {
-    display: none;
   }
 
   .hero {
