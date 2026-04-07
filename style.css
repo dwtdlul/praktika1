@@ -126,3 +126,84 @@ h1 {
   font-size: 14px;
   color: #fff;
 }
+/* Кнопки */
+.btn {
+  padding: 12px 30px;
+  border: 100px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin: 5px;
+  transition: opacity 0.3s;
+  font-family: var(--font-family);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  margin-bottom: 204px;
+  padding: 9px 29px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  color: #fff;
+  background: #8dd83d;
+  border-radius: 4px;
+}
+.btn-primary-next {
+  margin-bottom: 103px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  color: #fff;
+  background: #8dd83d;
+  border-radius: 4px;
+  width: 170px;
+height: 52px;
+}
+.btn-primary-sled{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 117%;
+color: #fff;
+border-radius: 4px;
+height: 52px;
+background: #8dd83d;
+}
+
+.btn-secondary {
+    padding: 9px 29px;
+  background: #8dd83d;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  color: #fff;
+}
+
+.btn-dark {
+border-radius: 4px;
+width: 235px;
+height: 52px;
+background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
+color: white;
+}
+body {
+  background: #efefef;
+}
+/* Контейнер */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Заголовок игры */
+.game-title-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
