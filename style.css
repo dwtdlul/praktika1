@@ -1,8 +1,128 @@
+/* styles.css */
+
 :root {
   --font-family: "HelveticaNeue", sans-serif;
 }
-*{
-  box-sizing: border-box;
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+/* Header */
+header {
+  background-color: #2b2b2b;
+  padding: 12px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+  gap: 250px;
+}
+header .right{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Навигация */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 160px;
+  background: #373a3c;
+  color: white;
+}
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+nav {
+  display: flex;
+  gap: 20px;
+}
+nav a {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+color: #fff;
+text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+.logo img {
+  height: 30px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.my-xbox{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+color: rgba(255, 255, 255, 0.5);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 4px;
+  padding: 6px 12px;
+  gap: 8px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+width: 209px;
+height: 38px;
+
+}
+/* Hero - используем Carousel.png как фон */
+.hero {
+  height: 550px;
+  background: url("/img/CoD-WWII.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10%;
+  height: 550px;
+  position: relative;
+}
+h1 {
+  padding-top: 109px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+}
+.release-date {
+  padding-bottom: 140px;
+}
+.release-date p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
 }
